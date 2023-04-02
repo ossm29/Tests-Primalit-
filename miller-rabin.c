@@ -97,9 +97,9 @@ int main() {
 
     int result = miller_rabin(n, k);
     if (result == 1) {
-        printf("*******************Le nombre est probablement premier*******************\n");
+        gmp_printf("******************* %Zd est probablement premier *******************\n",n);
     } else {
-        printf("*******************Le nombre est composé*******************\n");
+        gmp_printf("******************* %Zd est composé *******************\n",n);
     }
 
     mpz_clear(n);
