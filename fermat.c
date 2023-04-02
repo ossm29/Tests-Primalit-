@@ -100,9 +100,9 @@ int main() {
         prime = Fermat(n, k);
 
         if (prime == 1)
-            gmp_printf("*******************%Zd est premier******************* \n", n);
+            gmp_printf("******************* %Zd est probablement premier ******************* \n", n);
         else
-            gmp_printf("*******************%Zd est composé******************* \n", n);
+            gmp_printf("******************* %Zd est composé ******************* \n", n);
     }
 
     mpz_clear(n);
